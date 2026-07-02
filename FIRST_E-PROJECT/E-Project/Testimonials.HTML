@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara Clinic</title>
+  <!-- Webpage Icon -->
+  <link rel="Icon" href="images/img 1.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Font Awsome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lora&family=Playfair+Display:ital,wght@0,500;1,500&family=Satisfy&display=swap"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet"/>
+    
+  <style>
+    p {
+      opacity: 0.7;
+    }
+
+    .nav-link:hover {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+
+    .fa-phone:hover,
+    .fa-envelope:hover {
+      opacity: 0.2;
+    }
+
+    .dropdown-item:hover {
+      color: dodgerblue;
+      position: relative;
+      left: 5px;
+    }
+    /* Chat Wrapper */
+.chat-wrapper {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* Force input visibility */
+#n8n-chat textarea,
+#n8n-chat input {
+  color: #000 !important;
+  background: #fff !important;
+  caret-color: #000 !important;
+  opacity: 1 !important;
+}
+
+/* Prevent global CSS damage */
+#n8n-chat * {
+  box-sizing: border-box;
+}
+ 
+  </style>
+</head>
+
+<body>
+  <!--  header start -->
+  <header>
+    <nav class="navbar-expand-lg" style="background-color: rgb(76, 182, 224);">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <span class="navbar-text ms-4  me-2">
+            <i class="fa-solid fa-phone fs-4 me-2" style="color: #0039a6"></i>
+            <a style="color: white; font-weight: 500;"> 01635 569600 </a>
+          </span>
+          <span class="navbar-text ms-4  me-2">
+            <i class="fa-solid fa-envelope fs-4 me-2 " style="color: #0039a6"></i>
+            <a href="#" style="text-decoration: none; color: white; font-weight: 500;"> office@zaraclinic.com </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--  header end -->
+
+  <!-- navigation start -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="border-bottom: 1px solid black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.HTML"><img src="IMAGES/img 1.PNG" class="ms-1"
+          style="width: 142px; height: 108px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 m-1 ms-auto  fw-bold text-center">
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="Index.HTML">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="AboutUs.HTML">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="Thearpists.html">THERAPISTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle m-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PRODUCTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item p-3" style="border-bottom: 1px solid grey; font-family: 'Sriracha', cursive;"
+                  href="EssentialOils.HTML">Essential Oils</a></li>
+              <li><a class="dropdown-item p-3" style="border-bottom: 1px solid grey; font-family: 'Sriracha', cursive;"
+                  href="Massage Creams and Lotions.HTML">Massage Creams & Lotions</a></li>
+              <li><a class="dropdown-item p-3" style="font-family: 'Solitreo', cursive;"
+                  href="Physiotherapy Machines.HTML">Physiotherapy
+                  Machines</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link m-1" href="Services.HTML">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1 active" style="color: rgb(61, 54, 54)" href="Testimonials.HTML">TESTIMONIALS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1" href="Gallery.HTML">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1" href="ContactUs.HTML">CONTACT US</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navigation end -->
+
+  <div class="chat-wrapper">
+  <div id="n8n-chat"></div>
+</div>
+
+  <!-- Testimonials start -->
+
+  <section class="my-5">
+    <div class="container">
+      <h1 class="text-center" style="color: #1755c7; font-family: 'Libre Baskerville', serif; font-size: 40px;" data-aos="fade-right">Patient Testimonials! </h1>
+      <div class="row mt-5">
+         <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/Vsa4KH2wN2o" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/q8P6D2BUZ58" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/brdNjP_FqR4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/Nu1JOW9mubk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/Z2oQRH25xJY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/ekkcvOxB_eQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/G3pgAeYzIM4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/veh4g_2d2GQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/1bCm-Edb_Ko" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/qX5gpNiTPcY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/HVgF7IQbKXs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center mt-3">
+          <iframe width="250" height="192" class="img-fluid" src="https://www.youtube.com/embed/umED9KaS5Xc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> My mother was referred to Surrey physio by her GP at Balham Park Surgery. She has been suffering from chronic back pain and severe pains shooting 
+            down her glutes and the back of her thighs. The pain was excruciating and subsequently debilitating. We started our sessions with Tommy Flanagan who, I have to say was amazing. He asked all the right questions to determine where the original problem stemmed 
+            from and accordingly worked on the areas required. The results have been brilliant and although not cured, my mother is responding well. With the exercise plans that were provided her mobility has improved significantly. Tommy was kind, respectful and profession
+            al in his approach with my mother who is elderly and partially sighted and I am grateful for the improvement the sessions have made to my mothers quality of life and overall well-being.<br>
+            Kindest regards </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Yasmin Hasniani. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i>  Tim and Peter have been very efficient in dealing with my problems and helping me to obtain optimum fitness. I have also been most impressed with
+             the efficiency and courtesy of the helpful staff at the clinic for the past 2 years.
+            I highly recommend Surrey Physio to anyone who want to be cared for by a team of professionals who are also sympathetic, and enthusiastic about the nature of treatment and the well being of their patients. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Forrester Osei. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i>  I have been coaching track sprinters for more than forty years now from club level through to World Championships and the Olympic Games. 
+            Over that time the availability of therapy either for body maintenance or rehabilitation from injury has been the most critical component of securing athlete success. It has also become very clear that there are very few in the profession capable of delivering a
+             world class service to athletes aspiring to compete alongside the best. Tim Allardyce and his staff have repeatedly proved they are not only up for this challenge, but have provided exemplary support for many of my athletes over recent years, and I would not hesitate to recommend them to anyone, whether aspiring international athlete, or simply someone needing expert treatment or advice. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> John V. Powell. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> I have been receiving my treatment at your Mitcham clinic and I have to say, it has been superb so far. The reception staff are extremely friendly and the waiting time is minimal.<br>
+            My physiotherapist Matthew is exceptional, he is friendly and forthcoming, his knowledge of treatments is vast and so he really knows what he is doing - a real asset and an invaluable member of your team in my opinion. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Chirag Vaid. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> Please could you pass on my praise to Mr J Wilson. He is a member of your Physio team. When Jamie treated me at the Croydon office. He was very professional in his work. The treatment he gave me help to an early recovery and save me from a lot of time off work. He even gave me advise and exercises for me to do at home which helped with my sleeping and pain relief. He is a great asset to your team and I will be recommending the surgery. Should you have a feedback form or survey, I would be more than happy to fill it in. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Phillippa Kanini. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> My name's Alex and I'm undergoing physiotherapy with Jamie. He's very professional and friendly. I like the fact that he explains everything to me regarding my condition and helped a lot with my knees, shoulders, neck and back pain. I couldn't desire a better physio and already report the improvements to my GP. Thanks to Jamie and Surrey Physio. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Alex Medin. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> Hope you had a nice weekend. My physiotherapy is Maria Panagiotidou I have seen her two times and will be seeing her again. she is very good thanks to her my back is feeling better. Before I saw Maria I went to a private physiotherapy they made it worst even though they charge an arm and a leg . That was that the reason I went to see my GP I am glad I did since been see by Maria my back is getting better. I will recommend Maria to all my friends. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Martha Berhanmeki. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i>I am pleased to say that my treatment by your company and in particular your physio, Jamie has been top notch. From the beginning of my treatment Jamie’s customer care has been excellent, showing at all times genuine interest and concern with my case.
+            By accurately assessing my injuries his treatment and advice thereafter has proved to be first class and I would have no hesitation in recommending both Jamie and also your company to my colleagues, friends and family. A very well done sir!! </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Mark Taylor. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> I just wanted to take the opportunity to thank Matt and Kione for the wonderful treatment our family received following a car accident. We always felt totally at ease and comfortable, it was a pleasure attending each and every session! And always greeted with a smile from your receptionist.<br>
+            My daughter Chantel who was treated by Kione has always had an interest in becoming a physiotherapist and after receiving such wonderful care from your team she's extremely serious about this career path. Just entered year 10 and chosen science subjects, health and social care and sports as GCSE options. Thank you again! </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Lisa Kinghorn. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> Just a quick email to give you my feedback on the physio treatment I have just receive. I was referred by my doctor (at the Border Practice) following an appointment on Tuesday 3rd September. I am training for a charity cycle ride in Vietnam & Cambodia leaving on 5th October, and I’m suffering from “Runner’s Knee”. You can imagine how pleased I was to get a telephone call on the Wednesday morning offering me an appointment at the newly opening office at the Border Surgery for that afternoon!<br>
+            I have now completed my 4 NHS sessions with Ben and, although the knee is not right (yet), it is definitely much better than it was! He has given me a list of exercises and stretches to do, and is confident that I should be okay (if not perfect) for my cycle ride.
+            I’d just like to say thank you for a wonderful service! I will be sure to recommend you to anyone who has need of a physio – and if I need it when I get back, I just might be back myself! Thanks again. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Carol Cross. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> I have been receiving treatment for sciatica with Ben in Aldershot, not only is the treatment working but Ben is the most pleasant person and very good, he seems to be able to find just the right spot with strong fingers, he is always on time never chats and waste time as he chats while working, I have had four treatments with two to go, and each week I am more comfortable. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Jennifer Rogan. </em></p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-11 mt-4 m-auto"  style="border: 1px solid rgb(224, 219, 219); border-radius: 6px;" data-aos="fade-zoom-in">
+          <p class="mt-3 ms-3 m-2"><em> <i class="fa-solid fa-quote-left fs-5 me-2" style="color: dodgerblue;"></i> I would just like to say a big THANK YOU for being able to attend Surrey Physio for NHS treatment of my tennis elbow. It has helped me greatly and the root of the problem has been identified and has been treated as well. I cannot praise the treatment I have received highly enough and I hope this service will continue so that both I and others will be able to receive pyshio treatment when needed. This type of treatment is very expensive and many are not able to pay for it themselves and as such, do not have it although it is maybe just what is needed to solve their problem. Once again, thank you. </em></p>
+            <p class="ms-3" style="color: dodgerblue; font-weight: 700;"><em> Judith Campbell. </em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials end -->
+
+  <!-- Footer start -->
+
+  <footer class=" text-center text-white" style="background-color: #002244">
+    <!-- Grid container -->
+    <div class="container p-5">
+
+
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <hr class="w-75 m-auto mb-2">
+            <h5 class="text-uppercase" style="font-family: 'Lora', serif;">Follow Us</h5>
+            <hr class="w-75 m-auto mb-2">
+            <div class="container p-2 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+
+                <!-- Facebook -->
+                <a class="btn text-light btn-floating m-1 rounded-circle"
+                  style="background-color: dodgerblue; border: none;" href="https://www.facebook.com"
+                  role="button"><i class="bi bi-facebook"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn text-light btn-floating m-1 rounded-circle"
+                  style="background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf); border: none;"
+                  href="https://www.instagram.com" role="button"><i
+                    class="bi bi-instagram"></i></i></a>
+
+                <!-- Twitter -->
+                <a class="btn text-light btn-floating m-1 rounded-circle"
+                  style="background-color: #00BFFF; border: none;" href="https://www.twitter.com"
+                  role="button"><i class="bi bi-twitter"></i></i></a>
+
+              </section>
+              <!-- Section: Social media -->
+            </div>
+          </div>
+          <!--Grid column-->
+
+
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <hr class="w-75 m-auto mb-2">
+            <h5 class="text-uppercase" style="font-family: 'Lora', serif;">
+              opening Timings</h5>
+            <hr class="w-75 m-auto mb-2">
+            <ul class="list-unstyled mb-0 col-8 m-auto mb-4">
+              <li>
+                Mon & Thurs : 8am - 7pm.<br>
+                Tues,Wed & Fri : 8am - 5.00pm.
+              </li>
+            </ul>
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <hr class="w-75 m-auto mb-2">
+            <h5 class="text-uppercase" style="font-family: 'Lora', serif;">Contact Zara Clinic</h5>
+            <hr class="w-75 m-auto mb-2">
+            <ul class="list-unstyled mb-0 col-7 m-auto">
+              <li>
+                43 Sea Road,<br>
+                England,Wales,Leeds, UK
+              </li>
+            </ul>
+            <hr class="w-75 m-auto mt-2">
+            <ul class="list-unstyled mb-0 col-7 m-auto mt-2">
+              <li>
+                (504) 414-0167
+              </li>
+            </ul>
+            <hr class="w-75 m-auto mt-2 mb-2">
+            <a href="#" style="color: white;"> office@zaraclinic.com </a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.2); border-top: 1px solid rgb(138, 138, 138);">
+      Copyright © 2023 All Rights Reserved by :
+      <a class="text-white" style="text-decoration: none;" href="#"> Zara Clinic</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Footer end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1100,once: true
+      });
+    </script>
+
+<script type="module">
+  import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+  createChat({
+    webhookUrl: "https://mohibraza1156.app.n8n.cloud/webhook/35f398a6-16fa-4183-a8ff-3f1643fa08d0/chat",
+    target: "#n8n-chat",
+
+    showWelcomeScreen: true,
+    loadPreviousSession: true,
+    enableStreaming: false,
+
+    initialMessages: [
+      "Hi 👋 I’m your AI assistant. How can I help you?"
+    ]
+  });
+</script>
+
+</body>
+
+</html>

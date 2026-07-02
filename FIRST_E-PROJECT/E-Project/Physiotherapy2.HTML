@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara Clinic</title>
+    <!-- Webpage Icon -->
+    <link rel="Icon" href="images/img 1.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Font Awsome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lora&family=Playfair+Display:ital,wght@0,500;1,500&family=Satisfy&display=swap"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet"/>
+    
+  <style>
+    p {
+      opacity: 0.6;
+    }
+
+    .nav-link:hover {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+
+    .fa-phone:hover,
+    .fa-envelope:hover {
+      opacity: 0.2;
+    }
+
+    .dropdown-item:hover {
+      color: dodgerblue;
+      position: relative;
+      left: 5px;
+    }
+    /* Chat Wrapper */
+.chat-wrapper {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* Force input visibility */
+#n8n-chat textarea,
+#n8n-chat input {
+  color: #000 !important;
+  background: #fff !important;
+  caret-color: #000 !important;
+  opacity: 1 !important;
+}
+
+/* Prevent global CSS damage */
+#n8n-chat * {
+  box-sizing: border-box;
+}
+  </style>
+</head>
+
+<body>
+  <!--  header start -->
+  <header>
+    <nav class="navbar-expand-lg" style="background-color: rgb(76, 182, 224);">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <span class="navbar-text ms-4  me-2">
+            <i class="fa-solid fa-phone fs-4 me-2" style="color: #0039a6"></i>
+            <a style="color: white; font-weight: 500;"> 01635 569600 </a>
+          </span>
+          <span class="navbar-text ms-4  me-2">
+            <i class="fa-solid fa-envelope fs-4 me-2 " style="color: #0039a6"></i>
+            <a href="#" style="text-decoration: none; color: white; font-weight: 500;"> office@zaraclinic.com </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--  header end -->
+
+  <div class="chat-wrapper">
+  <div id="n8n-chat"></div>
+</div>
+
+  <!-- navigation start -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="border-bottom: 1px solid black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.HTML"><img src="IMAGES/img 1.PNG" class="ms-1"
+          style="width: 142px; height: 108px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 m-1 ms-auto  fw-bold text-center">
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="Index.HTML">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="AboutUs.HTML">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="Thearpists.html">THERAPISTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle m-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PRODUCTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item p-3" style="border-bottom: 1px solid grey; font-family: 'Sriracha', cursive;"
+                  href="EssentialOils.HTML">Essential Oils</a></li>
+              <li><a class="dropdown-item p-3" style="border-bottom: 1px solid grey; font-family: 'Sriracha', cursive;"
+                  href="Massage Creams and Lotions.HTML">Massage Creams & Lotions</a></li>
+              <li><a class="dropdown-item p-3" style="font-family: 'Solitreo', cursive;" href="Physiotherapy Machines.HTML">Physiotherapy
+                  Machines</a></li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link m-1 active" style="color: rgb(61, 54, 54)" href="Services.HTML">SERVICES</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1" href="Testimonials.HTML">TESTIMONIALS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1" href="Gallery.HTML">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1" href="ContactUs.HTML">CONTACT US</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navigation end -->
+
+<!-- PhsioTherapy Start -->
+
+<section class="my-5">
+    <h1 class="text-center my-4" style="color: #1755c7; font-family: 'Libre Baskerville', serif; font-size: 40px;" data-aos="fade-right"> Physiotherapy!  </span></h1>
+    <div class="container mt-4 mb-4">
+        <div class="row">
+         <div class="col-lg-9 col-md-8 col-sm-12 mt-3">
+            <p class="fs-5"> Physiotherapy is generally described as a treatment method commonly used in preventing injury, promoting health, and maximising physical strength.
+                However, when you take a closer look, you'll notice that it's actually a kind of umbrella term under which physical therapy practices and treatments fall. In this article, we explore the common types of physiotherapy and the conditions they treat. The image that comes to mind for most people when you mention physiotherapists is someone running onto a sports pitch to treat an injuried player. This however is a very small part of who and what physiotherapists are. Physiotherapy is used in many settings and fields of medicine. In today’s climate of austerity, in order to justify our efficacy and cost effectiveness we have had to undertake research within our profession and ask questions of ourselves as to the effectiveness and role of our profession. </p>
+            </div>   
+            <div class="col-lg-3 col-md-4 col-sm-12 text-center mt-3 mb-4" data-aos="fade-left">
+              <img src="images/img 39.jpg" class="img-fluid rounded-circle ms-1" style="height: 225px; width: 238px; border-color: #1755c7; border: 8px solid #1755c7;" alt="">
+            </div>
+            <div class="col col-md-8 col-sm-12 mt-1"> 
+              <a class="fs-5" style=" color: grey; text-decoration: none; font-weight: 500;"><em>Initial consultation (45 minutes) - £75</em></a><br>
+              <a class="fs-5" style=" color: grey; text-decoration: none; font-weight: 500;"><em>Follow up (30 minutes) - £50</em></a><br><br>
+              <a class="fs-5" style=" color: grey; text-decoration: none;"> Call us: 504-414-0167 </a><br>
+              <a class="fs-5" style="color: grey; text-decoration: none;">Email:</a> <a class="fs-5" href="#"> office@zaraclinic.com</a><br><br>
+            </div>
+          </div>
+      </div> 
+  </section>
+
+  <!-- PhsioTherapy end -->
+
+ <!-- Footer start -->
+
+ <footer class=" text-center text-white" style="background-color: #002244">
+  <!-- Grid container -->
+  <div class="container p-5">
+
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+          <hr class="w-75 m-auto mb-2">
+          <h5 class="text-uppercase" style="font-family: 'Lora', serif;">Follow Us</h5>
+          <hr class="w-75 m-auto mb-2">
+          <div class="container p-2 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+              <!-- Facebook -->
+              <a class="btn text-light btn-floating m-1 rounded-circle"
+                style="background-color: dodgerblue; border: none;" href="https://www.facebook.com"
+                role="button"><i class="bi bi-facebook"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn text-light btn-floating m-1 rounded-circle"
+                style="background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf); border: none;"
+                href="https://www.instagram.com" role="button"><i
+                  class="bi bi-instagram"></i></i></a>
+
+              <!-- Twitter -->
+              <a class="btn text-light btn-floating m-1 rounded-circle"
+                style="background-color: #00BFFF; border: none;" href="https://www.twitter.com"
+                role="button"><i class="bi bi-twitter"></i></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+          <hr class="w-75 m-auto mb-2">
+          <h5 class="text-uppercase" style="font-family: 'Lora', serif;">
+            opening Timings</h5>
+          <hr class="w-75 m-auto mb-2">
+          <ul class="list-unstyled mb-0 col-8 m-auto mb-4">
+            <li>
+              Mon & Thurs : 8am - 7pm.<br>
+              Tues,Wed & Fri : 8am - 5.00pm.
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+          <hr class="w-75 m-auto mb-2">
+          <h5 class="text-uppercase" style="font-family: 'Lora', serif;">Contact Zara Clinic</h5>
+          <hr class="w-75 m-auto mb-2">
+          <ul class="list-unstyled mb-0 col-7 m-auto">
+            <li>
+              43 Sea Road,<br>
+              England,Wales,Leeds, UK
+            </li>
+          </ul>
+          <hr class="w-75 m-auto mt-2">
+          <ul class="list-unstyled mb-0 col-7 m-auto mt-2">
+            <li>
+              (504) 414-0167
+            </li>
+          </ul>
+          <hr class="w-75 m-auto mt-2 mb-2">
+          <a href="#" style="color: white;"> office@zaraclinic.com </a>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3"
+    style="background-color: rgba(0, 0, 0, 0.2); border-top: 1px solid rgb(138, 138, 138);">
+    Copyright © 2023 All Rights Reserved by :
+    <a class="text-white" style="text-decoration: none;" href="#"> Zara Clinic</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- Footer end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, once: true
+      });
+    </script>
+
+    <script type="module">
+  import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+  createChat({
+    webhookUrl: "https://mohibraza1156.app.n8n.cloud/webhook/35f398a6-16fa-4183-a8ff-3f1643fa08d0/chat",
+    target: "#n8n-chat",
+
+    showWelcomeScreen: true,
+    loadPreviousSession: true,
+    enableStreaming: false,
+
+    initialMessages: [
+      "Hi 👋 I’m your AI assistant. How can I help you?"
+    ]
+  });
+</script>
+
+</body>
+
+</html>

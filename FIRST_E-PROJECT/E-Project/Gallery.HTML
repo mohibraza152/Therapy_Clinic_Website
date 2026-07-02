@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara Clinic</title>
+  <!-- Webpage Icon -->
+  <link rel="Icon" href="images/img 1.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Font Awsome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lora&family=Playfair+Display:ital,wght@0,500;1,500&family=Satisfy&display=swap"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet"/>
+    
+  <style>
+    p 
+    {
+      opacity: 0.7;
+    }
+
+    .nav-link:hover {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+
+    .fa-phone:hover,
+    .fa-envelope:hover {
+      opacity: 0.2;
+    }
+
+    .dropdown-item:hover {
+      color: dodgerblue;
+      position: relative;
+      left: 5px;
+    }
+    img
+    {
+        cursor: pointer;
+        transition: all 1.3s ease;
+    }
+    .col-lg-4 img:hover
+    {
+        overflow: hidden; 
+        transform: scale(1.1);
+        opacity: 0.8;    
+    }
+    /* Chat Wrapper */
+.chat-wrapper {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* Force input visibility */
+#n8n-chat textarea,
+#n8n-chat input {
+  color: #000 !important;
+  background: #fff !important;
+  caret-color: #000 !important;
+  opacity: 1 !important;
+}
+
+/* Prevent global CSS damage */
+#n8n-chat * {
+  box-sizing: border-box;
+}
+  </style>
+</head>
+
+<body>
+  <!--  header start -->
+  <header>
+    <nav class="navbar-expand-lg" style="background-color: rgb(76, 182, 224);">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <span class="navbar-text ms-4  me-2">
+            <i class="fa-solid fa-phone fs-4 me-2" style="color: #0039a6"></i>
+            <a style="color: white; font-weight: 500;"> 01635 569600 </a>
+          </span>
+          <span class="navbar-text ms-4  me-2">
+            <i class="fa-solid fa-envelope fs-4 me-2 " style="color: #0039a6"></i>
+            <a href="#" style="text-decoration: none; color: white; font-weight: 500;"> office@zaraclinic.com </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--  header end -->
+
+  <div class="chat-wrapper">
+  <div id="n8n-chat"></div>
+</div>
+
+  <!-- navigation start -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="border-bottom: 1px solid black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.HTML"><img src="IMAGES/img 1.PNG" class="ms-1"
+          style="width: 142px; height: 108px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 m-1 ms-auto  fw-bold text-center">
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="Index.HTML">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="AboutUs.HTML">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-1" aria-current="page" href="Thearpists.html">THERAPISTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle m-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PRODUCTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item p-3" style="border-bottom: 1px solid grey; font-family: 'Sriracha', cursive;"
+                  href="EssentialOils.HTML">Essential Oils</a></li>
+              <li><a class="dropdown-item p-3" style="border-bottom: 1px solid grey; font-family: 'Sriracha', cursive;"
+                  href="Massage Creams and Lotions.HTML">Massage Creams & Lotions</a></li>
+              <li><a class="dropdown-item p-3" style="font-family: 'Solitreo', cursive;" href="Physiotherapy Machines.HTML">Physiotherapy
+                  Machines</a></li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link m-1" href="Services.HTML">SERVICES</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1" href="Testimonials.HTML">TESTIMONIALS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1 active" style="color: rgb(61, 54, 54)" href="Gallery.HTML">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  m-1" href="ContactUs.HTML">CONTACT US</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navigation end -->
+
+    <!-- Gallery Start -->
+
+    <section class="my-5">
+      <h1 class="text-center" style="color: #1755c7; font-family: 'Libre Baskerville', serif; font-size: 40px;" data-aos="fade-right">Our Gallery! </h1>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                   <img src="https://img.freepik.com/free-photo/physiotherapy-clinic-with-equipment-rehabilitation_1139-1201.jpg?w=740&t=st=1680472763~exp=1680473363~hmac=b2a6b49939bd255a9479c1f4b278fbb27a3e9afa31f338ba95b16590b8807479" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/free-photo/practitioner-man-doctor-helping-retiree-senior-male-wheelchair-physiotherapy-strength-exercise_482257-12761.jpg?size=626&ext=jpg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/free-photo/medium-shot-man-helping-patient-physiotherapy_23-2149047562.jpg?w=740&t=st=1680460192~exp=1680460792~hmac=3ecd6028dc6160266df0b91ddec0303a1d12f9aebd0423c5e13ff385a7c1264d" class="img-fluid" alt="">
+                 </div>
+               
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/premium-photo/nurse-wheelchair-with-nurse-left-shoulder_35752-15005.jpg?w=740" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/free-photo/physical-therapist-assisting-young-caucasian-woman-with-exercise_1139-1247.jpg?size=626&ext=jpg" class="img-fluid" alt="">
+                 </div>               
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="images/img 39.jpg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/premium-photo/estudio-de-tatuajes-con-una-silla-en-el-medio-de-color-negro_261378-1917.jpg?w=740" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/premium-photo/physical-rehabilitation-therapy-room_23-2149178078.jpg?w=740" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/free-photo/young-physiotherapist-examining-customer-s-leg-while-colleague-noting-clipboard-hospital_662251-1651.jpg?size=626&ext=jpg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                  <img src="https://img.freepik.com/premium-photo/physiotherapist-with-mask-patient-doing-exercises-with-rubber-giant-ball-physiotherapy-with-protective-measures-coronavirus-pandemic-covid-19-osteopathy-sports-chiromassage_242111-848.jpg?w=740" class="img-fluid" alt="">
+               </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                  <img src="https://st5.depositphotos.com/1049680/63910/i/600/depositphotos_639108714-stock-photo-middle-age-man-woman-having.jpg" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <img src="https://as2.ftcdn.net/v2/jpg/00/64/49/55/1000_F_64495523_3KgzIY4Ji5CIizp5GFUtWxovDGOfBSV4.jpg" class="img-fluid" alt="">
+             </div>  
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/free-photo/full-shot-man-helping-patient-with-recovery_23-2149178044.jpg?w=740&t=st=1680471021~exp=1680471621~hmac=aaec0caab3c8bf0a5f742bddcfd2d28caa909d0a0894607c9a48f6c296d85285" class="img-fluid" alt="">
+                 </div>           
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://st4.depositphotos.com/20363444/26840/i/600/depositphotos_268406182-stock-photo-handsome-physiotherapist-massaging-leg-football.jpg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                  <img src="https://img.freepik.com/free-photo/physiotherapy-clinic-with-equipment-rehabilitation_1139-1200.jpg?w=740&t=st=1680472817~exp=1680473417~hmac=880bcc0320af7e31bacc654e5a7f7287e5fc4fbe39bfc3da38616ef9d3095053" class="img-fluid" alt="">
+               </div>  
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="https://img.freepik.com/premium-photo/physiotherapist-helping-old-man-with-leg-injury-recover-kinetotherapy-clinic-chiropractor-giving-support-retired-patient-with-knee-pain-muscle-pressure-recovery_482257-31869.jpg?w=740" class="img-fluid" alt="">
+                 </div> 
+                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                  <img src="https://img.freepik.com/free-photo/physical-therapist-assisting-young-caucasian-woman-with-exercise_1139-1250.jpg?w=740&t=st=1680503407~exp=1680504007~hmac=fa25711e4d9092049a6193f433c42cb190ffdee5683f74524973971b60308938" class="img-fluid" alt="">
+               </div>  
+               <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <img src="https://img.freepik.com/free-photo/patient-doing-exercise-using-sports-equipment-with-therapist_1157-38273.jpg?w=740&t=st=1680503480~exp=1680504080~hmac=cca74157dd735e0fe20263e3933968b266a10184677742c115c422213280ec04" class="img-fluid" alt="">
+             </div>     
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery End -->
+
+  <!-- Footer start -->
+
+  <footer class=" text-center text-white" style="background-color: #002244">
+    <!-- Grid container -->
+    <div class="container p-5">
+
+
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <hr class="w-75 m-auto mb-2">
+            <h5 class="text-uppercase" style="font-family: 'Lora', serif;">Follow Us</h5>
+            <hr class="w-75 m-auto mb-2">
+            <div class="container p-2 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+
+                <!-- Facebook -->
+                <a class="btn text-light btn-floating m-1 rounded-circle"
+                  style="background-color: dodgerblue; border: none;" href="https://www.facebook.com"
+                  role="button"><i class="bi bi-facebook"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn text-light btn-floating m-1 rounded-circle"
+                  style="background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf); border: none;"
+                  href="https://www.instagram.com" role="button"><i
+                    class="bi bi-instagram"></i></i></a>
+
+                <!-- Twitter -->
+                <a class="btn text-light btn-floating m-1 rounded-circle"
+                  style="background-color: #00BFFF; border: none;" href="https://www.twitter.com"
+                  role="button"><i class="bi bi-twitter"></i></i></a>
+
+              </section>
+              <!-- Section: Social media -->
+            </div>
+          </div>
+          <!--Grid column-->
+
+
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <hr class="w-75 m-auto mb-2">
+            <h5 class="text-uppercase" style="font-family: 'Lora', serif;">
+              opening Timings</h5>
+            <hr class="w-75 m-auto mb-2">
+            <ul class="list-unstyled mb-0 col-8 m-auto mb-4">
+              <li>
+                Mon & Thurs : 8am - 7pm.<br>
+                Tues,Wed & Fri : 8am - 5.00pm.
+              </li>
+            </ul>
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <hr class="w-75 m-auto mb-2">
+            <h5 class="text-uppercase" style="font-family: 'Lora', serif;">Contact Zara Clinic</h5>
+            <hr class="w-75 m-auto mb-2">
+            <ul class="list-unstyled mb-0 col-7 m-auto">
+              <li>
+                43 Sea Road,<br>
+                England,Wales,Leeds, UK
+              </li>
+            </ul>
+            <hr class="w-75 m-auto mt-2">
+            <ul class="list-unstyled mb-0 col-7 m-auto mt-2">
+              <li>
+                (504) 414-0167
+              </li>
+            </ul>
+            <hr class="w-75 m-auto mt-2 mb-2">
+            <a href="#" style="color: white;"> office@zaraclinic.com </a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.2); border-top: 1px solid rgb(138, 138, 138);">
+      Copyright © 2023 All Rights Reserved by :
+      <a class="text-white" style="text-decoration: none;" href="#"> Zara Clinic</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Footer end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,once: true
+      });
+    </script>
+
+    <script type="module">
+  import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+  createChat({
+    webhookUrl: "https://mohibraza1156.app.n8n.cloud/webhook/35f398a6-16fa-4183-a8ff-3f1643fa08d0/chat",
+    target: "#n8n-chat",
+
+    showWelcomeScreen: true,
+    loadPreviousSession: true,
+    enableStreaming: false,
+
+    initialMessages: [
+      "Hi 👋 I’m your AI assistant. How can I help you?"
+    ]
+  });
+</script>
+
+</body>
+
+</html>
